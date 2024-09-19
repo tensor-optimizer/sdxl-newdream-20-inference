@@ -25,5 +25,5 @@ def infer(request: TextToImageRequest, pipeline: StableDiffusionXLPipeline) -> I
         negative_prompt=request.negative_prompt,
         width=request.width,
         height=request.height,
-        generator=generator,
+        generator=generator
     ).images[0]
